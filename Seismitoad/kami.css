@@ -1,0 +1,85 @@
+#humMenu {
+  z-index: 20;
+  padding: 12px;
+  background: gold;
+}
+ 
+#humCheck, #humClose { display:none; }
+#humOpen {
+  display: block;
+  width: 58px;
+  cursor: pointer;
+}
+#humOpen:hover {
+  opacity: 0.5;
+}
+#humOpen img { display: block; }
+#humClose, nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+#humClose {
+  z-index: 2;
+  width: 100%;
+  background: gray;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+nav {
+  z-index: 3;
+  width: 330px;
+  background: gold;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+#humCheck:checked ~ #humClose { display: block; }
+#humCheck:checked ~ nav {
+  transform: translateX(0);
+}
+/*
+nav ul{
+overflow: hidden;
+list-style: none;
+}
+nav li{
+  padding: 15px 0;
+  margin: 10px 0;
+}
+nav li:hover{
+  opacity: 0.5;
+}
+nav li a{
+  font-size: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}*/
+.nice-textbox{
+  position: relative;
+  display: block;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 15px;
+  
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: magenta;
+  outline: none;
+  background-color: black;
+}
+.btn--orange,
+a.btn--orange {
+  width: 150px;
+    padding: 10px;
+  color: #fff;
+  background-color: black;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: black;
+}
